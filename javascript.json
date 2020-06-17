@@ -1,0 +1,13 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0&appId=491591584888260&autoLogAppEvents=1" nonce="pbK43Kjq"></script>
+<div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
+FB.getLoginStatus(function(response) 
+{if (response.status === 'connected')
+{console.log(response.authResponse.accessToken);
+ FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
+{
+  "id":"101540562372987329832845483",
+  "name":"Bob Smith"
+}

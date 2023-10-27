@@ -78,14 +78,14 @@ exports.faketoken = functions.https.onRequest((request, response) => {
   if (grantType === 'authorization_code') {
     obj = {
       token_type: 'bearer',
-      access_token: '123access',
-      refresh_token: '123refresh',
-      expires_in: secondsInDay,
+      access_token: 'act.example12345Example12345Example',
+      refresh_token: 'rft.example12345Example12345Example',
+      expires_in: 86400,
     };
   } else if (grantType === 'refresh_token') {
     obj = {
       token_type: 'bearer',
-      access_token: '123access',
+      access_token: 'act.example12345Example12345Example',
       expires_in: secondsInDay,
     };
   }
